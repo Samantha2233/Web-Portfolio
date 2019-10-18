@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  G O O G L E   F O N T S  -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600i,700,700i|Noto+Sans+TC:300,400,500,900&display=swap"
+        rel="stylesheet">
+    <!--  B O O T S T R A P  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--  J A V A S C R I P T -->
+    <script defer src="js/script.js"></script>
+    <!--  J Q U E R Y  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--  C S S  -->
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Samantha's Web Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#welcome-section">
+            <img class="logo" src="./images/logo.png" alt="logo">
+        </a>
+        <img class="hamburger" src="./images/hamburger-black.png" alt="hamburger-menu">
+        <div class="nav-items">
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link scroll active" href="#welcome-section">Welcome</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link scroll" href="#skills-section">Skills</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link scroll" href="#project-section">Projects</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link scroll" href="#bio-section">Bio</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link scroll" href="#contact-section">Contact</a>
+            <!-- </li> -->
+        </div>
+
+    </nav>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-items">
+            <a class="nav-link scroll active" href="#welcome-section">Welcome</a>
+            <a class="nav-link scroll" href="#skills-section">Skills</a>
+            <a class="nav-link scroll" href="#project-section">Projects</a>
+            <a class="nav-link scroll" href="#bio-section">Bio</a>
+            <a class="nav-link scroll" href="#contact-section">Contact</a>
+        </div>
+    </div>
+
+
+    <section id="welcome-section">
+        <img id="portrait" src="./images/portrait.JPG" alt="sefl-portrait">
+        <div id="welcome-words">
+            <h1>Hi, </h1>
+            <h1>I'm Samantha.</h1>
+            <br />
+            <p>A</p>
+            <p><span class="medium">Front-End Developer</span></p>
+            <p>with Full-Stack knowledge</p>
+            <p>and an </p>
+            <p><span class="medium">admiration</span>
+                for <span class="medium">UX/UI Design</span>.</p>
+        </div>
+    </section>
+    <section id="skills-section">
+        <h3>SKILLS</h3>
+        <div>
+            <div class='col-4'>
+                <li>Node.js</li>
+                <li>React / Redux</li>
+                <li>ES6 JavaScript</li>
+                <li>HTML5 / CSS3</li>
+                <li>Sass</li>
+                <li>jQuery</li>
+            </div>
+            <div class='col-4'>
+                <li>MVC</li>
+                <li>Express</li>
+                <li>RESTful Routing</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>OAuth</li>
+            </div>
+            <div class='col-4'>
+                <li>Jason Web Tokens</li>
+                <li>PostgreSQL</li>
+                <li>Django</li>
+                <li>Python3</li>
+            </div>
+        </div>
+        <div class='col-1'>
+            <li>Responsive Web Design</li>
+            <li>Human Centered Design</li>
+            <li>Why? 5 Times.</li>
+            <li>Adobe Creative Suite</li>
+            <li>Prototyping</li>
+        </div>
+    </section>
+    <section id="project-section">
+        <img src="" alt="">
+        <div class="project-info-box">
+            <h2>Visualize</h2>
+            <h4>Task Manager</h4>
+            <p>Prioritize your tasks by size and color!
+                <br />
+                Calendar included.
+            </p>
+        </div>
+        <div class="button-box">
+            <button class="btn btn-sm btn-outline-dark">GitHub</button>
+            <button class="btn btn-sm btn-outline-dark">Demo</button>
+        </div>
+        <div class="tech-used">
+            <p>React</p>
+            <p>Node.js</p>
+            <p>MongoDB</p>
+            <p>Mongoose</p>
+            <p>Json Web Tokens</p>
+            <p>Bootstrap</p>
+            <p>Sass</p>
+        </div>
+    </section>
+    <section class="project-section">
+        <img src="" alt="">
+        <div class="project-info-box">
+            <h2>Cafe Madrid</h2>
+            <h4>Online Ordering</h4>
+            <p> *** Short Description *** </p>
+        </div>
+        <div class="button-box">
+            <button class="btn btn-sm">GitHub</button>
+            <button class="btn btn-sm">Demo</button>
+        </div>
+        <div class="tech-used">
+            <p>Node.js</p>
+            <p>Express</p>
+            <p>MongoDB</p>
+            <p>Mongoose</p>
+            <p>ES6 JavaScript</p>
+            <p>OAuth</p>
+        </div>
+    </section>
+    <section class="project-section">
+        <img src="" alt="">
+        <div class="project-info-box">
+            <h2>War</h2>
+            <h4>(The Card Game)</h4>
+            <p> *** Short Description *** </p>
+        </div>
+        <div class="button-box">
+            <button class="btn btn-sm">GitHub</button>
+            <button class="btn btn-sm">Demo</button>
+        </div>
+        <div class="tech-used">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>Vanilla JavaScript</p>
+        </div>
+    </section>
+    <section id="bio-section">
+
+    </section>
+
+    <section id="contact-section">
+
+    </section>
+
+
+
+
+</body>
+
+</html>

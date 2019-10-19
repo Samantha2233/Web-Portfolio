@@ -60,7 +60,7 @@
     <section id="welcome-section">
         <img id="portrait" src="./images/portrait.JPG" alt="sefl-portrait">
         <div id="welcome-words">
-            <h1>Hi, </h1>
+            <h1 id="hi">Hi, </h1>
             <h1>I'm Samantha.</h1>
             <br />
             <p> A <span class="medium">Front-End Developer</span> with</p>
@@ -75,105 +75,137 @@
             <div class='col-md-12 col-lg-2'>
                 <h3 id="skill-hdr">SKILLS</h3>
             </div>
-            <div class='skill-list col-xs-4 col-sm-4 col-md-3 col-lg-2'>
+            <div class='skill-list col-xs-2 col-sm-3 col-md-3 col-lg-2'>
                 <li>Node.js</li>
-                <li>React / Redux</li>
-                <li>ES6 JavaScript</li>
+                <li>React</li>
+                <li>JavaScript</li>
                 <li>HTML5 / CSS3</li>
                 <li>Sass</li>
                 <li>jQuery</li>
             </div>
-            <div class='skill-list col-xs-4 col-sm-4 col-md-3 col-lg-2'>
+            <div class='skill-list col-xs-2 col-sm-3 col-md-3 col-lg-2'>
+                <li>Responsive Design</li>
+                <li>Human Centered Design</li>
+                <li>Ask, Why? 5 Times.</li>
+                <li>Adobe Creative Suite</li>
+                <li>Prototyping</li>
+
+            </div>
+            <div class='skill-list col-xs-2 col-sm-3 col-md-3 col-lg-2'>
                 <li>MVC</li>
                 <li>Express</li>
                 <li>RESTful Routing</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
-                <li>OAuth</li>
             </div>
-            <div class='skill-list col-xs-4 col-sm-4 col-md-3 col-lg-2'>
-                <li>Jason Web Tokens</li>
+            <div class='skill-list col-xs-2 col-sm-3 col-md-3 col-lg-2'>
+                <li>Json Web Tokens</li>
+                <li>OAuth</li>
                 <li>PostgreSQL</li>
                 <li>Django</li>
                 <li>Python3</li>
             </div>
-            <div class='skill-list col-xs-4 col-sm-4 col-md-3 col-lg-2'>
-                <li>Responsive Web Design</li>
-                <li>Human Centered Design</li>
-                <li>Why? 5 Times.</li>
-                <li>Adobe Creative Suite</li>
-                <li>Prototyping</li>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="project-section" class="container">
+        <h3>Projects</h3>
+        <div class="row d-flex justify-content-between">
+
+            <div class="project col-md-6 col-lg-4 justify-self-center">
+                <img src="./images/AllTasksPage.png" alt="Screentshot Visualizer Project">
+                <div class="project-info-box row">
+                    <div class="col-6">
+                        <h2>Visualize</h2>
+                        <h4>Task Manager</h4>
+                        <p class="description">Prioritize your tasks by size and color!
+                            <br />
+                            Calendar included.
+                        </p>
+                        <div class="button-box">
+                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
+                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="tech-used col-4">
+                        <p>React</p>
+                        <p>Node.js</p>
+                        <p>MongoDB</p>
+                        <p>Mongoose</p>
+                        <p>Json Web Tokens</p>
+                        <p>Bootstrap</p>
+                        <p>Sass</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="project-section">
-        <img src="" alt="">
-        <div class="project-info-box">
-            <h2>Visualize</h2>
-            <h4>Task Manager</h4>
-            <p>Prioritize your tasks by size and color!
-                <br />
-                Calendar included.
-            </p>
-        </div>
-        <div class="button-box">
-            <button class="btn btn-sm btn-outline-dark">GitHub</button>
-            <button class="btn btn-sm btn-outline-dark">Demo</button>
-        </div>
-        <div class="tech-used">
-            <p>React</p>
-            <p>Node.js</p>
-            <p>MongoDB</p>
-            <p>Mongoose</p>
-            <p>Json Web Tokens</p>
-            <p>Bootstrap</p>
-            <p>Sass</p>
-        </div>
-    </section>
-    <section class="project-section">
-        <img src="" alt="">
-        <div class="project-info-box">
-            <h2>Cafe Madrid</h2>
-            <h4>Online Ordering</h4>
-            <p> *** Short Description *** </p>
-        </div>
-        <div class="button-box">
-            <button class="btn btn-sm">GitHub</button>
-            <button class="btn btn-sm">Demo</button>
-        </div>
-        <div class="tech-used">
-            <p>Node.js</p>
-            <p>Express</p>
-            <p>MongoDB</p>
-            <p>Mongoose</p>
-            <p>ES6 JavaScript</p>
-            <p>OAuth</p>
-        </div>
-    </section>
-    <section class="project-section">
-        <img src="" alt="">
-        <div class="project-info-box">
-            <h2>War</h2>
-            <h4>(The Card Game)</h4>
-            <p> *** Short Description *** </p>
-        </div>
-        <div class="button-box">
-            <button class="btn btn-sm">GitHub</button>
-            <button class="btn btn-sm">Demo</button>
-        </div>
-        <div class="tech-used">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>Vanilla JavaScript</p>
-        </div>
-    </section>
-    <section id="bio-section">
 
-    </section>
 
-    <section id="contact-section">
 
-    </section>
+
+            <div class="project col-md-6 col-lg-4 justify-self-center">
+                <img src="./images/cafe-madrid-lunch.jpg" alt="Screenshot of Cafe Madrid Project">
+                <div class="project-info-box row">
+                    <div class="col-6">
+                        <h2>Cafe Madrid</h2>
+                        <h4>Online Ordering</h4>
+                        <p class="description"> Order some hypothetical tapas for lunch! </p>
+                        <div class="button-box">
+                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
+                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                        </div>
+                    </div>
+                    <div class="tech-used col-4">
+                        <p>Node.js</p>
+                        <p>Express</p>
+                        <p>MongoDB</p>
+                        <p>Mongoose</p>
+                        <p>ES6 JavaScript</p>
+                        <p>OAuth</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project col-md-6 col-lg-4 justify-self-center">
+                <img src="./images/War.jpg" alt="Screenshot of War Card Game Project">
+                <div class="project-info-box row">
+                    <div class="col-6">
+                        <h2>War</h2>
+                        <h4>(The Card Game)</h4>
+                        <p class="description"> Gaming Logic with JavaScript</p>
+                        <div class="button-box">
+                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
+                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="tech-used col-4">
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>Vanilla JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <section id="bio-section">
+            <h3>Bio</h3>
+        </section>
+
+        <section id="contact-section">
+            <h3>Contact</h3>
+        </section>
 
 
 

@@ -9,6 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600i,700,700i|Noto+Sans+TC:300,400,500,900&display=swap"
         rel="stylesheet">
+    <!--  F O N T   A W E S O M E   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <!--  B O O T S T R A P  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -35,7 +37,9 @@
         <a href="#welcome-section">
             <img class="logo" src="./images/logo.png" alt="logo">
         </a>
-        <img class="hamburger" src="./images/hamburger-black.png" alt="hamburger-menu">
+        <img id="hamburger" src="./images/hamburger-black.png" alt="hamburger-menu">
+        <img id="exit" src="./images/exit-icon.png" alt="exit-menu">
+
         <div class="navbar-nav nav-items">
             <a class="nav-link scroll active" href="#welcome-section">Welcome</a>
             <a class="nav-link scroll" href="#skills-section">Skills</a>
@@ -45,20 +49,19 @@
 
     </nav>
 
-    <div class="mobile-nav">
-        <div class="mobile-nav-items">
-            <a class="nav-link scroll active" href="#welcome-section">Welcome</a>
-            <a class="nav-link scroll" href="#skills-section">Skills</a>
-            <a class="nav-link scroll" href="#project-section">Projects</a>
-            <a class="nav-link scroll" href="#bio-contact-section">Bio & Contact</a>
-        </div>
+    <div id="mobile-nav">
+        <a class="nav-link scroll active" href="#welcome-section">Welcome</a>
+        <a class="nav-link scroll" href="#skills-section">Skills</a>
+        <a class="nav-link scroll" href="#project-section">Projects</a>
+        <a class="nav-link scroll" href="#bio-contact-section">Bio & Contact</a>
     </div>
 
 
     <section id="welcome-section">
-        <img id="portrait" src="./images/portrait.JPG" alt="sefl-portrait">
+        <img id="portrait" src="./images/portrait.JPG" alt="Portrait (shot by Edden Amber">
+        <a href="https://www.instagram.com/edden" id="edden" target="_blank">photo by @edden</a>
         <div id="welcome-words">
-            <h1 id="hi">Hi, </h1>
+            <h1>Hi, </h1>
             <h1>I'm Samantha.</h1>
             <br />
             <p> A <span class="medium">Front-End Developer</span> with</p>
@@ -114,21 +117,24 @@
 
     <section id="project-section" class="container">
         <h3>Projects</h3>
-        <div class="row d-flex justify-content-between">
+        <div class="row d-flex justify-content-between align-items-stretch">
 
-            <div class="project col-md-6 col-lg-4 justify-self-center">
+            <div class="project col-md-6 col-lg-4">
                 <img src="./images/AllTasksPage.png" alt="Screentshot Visualizer Project">
-                <div class="project-info-box row">
-                    <div class="col-6">
+                <div class="project-info-box row d-flex justify-content-between">
+                    <div class="col-8">
                         <h2>Visualize</h2>
                         <h4>Task Manager</h4>
                         <p class="description">Prioritize your tasks by size and color!
-                            <br />
                             Calendar included.
                         </p>
                         <div class="button-box">
-                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
-                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                            <button class="btn btn-sm btn-outline-dark"><a
+                                    href="https://github.com/Samantha2233/React-Visualize"
+                                    target="_blank">GitHub</a></button>
+                            <button class="btn btn-sm btn-outline-dark"><a
+                                    href="https://github.com/Samantha2233/React-Visualize"
+                                    target="_blank">Demo</a></button>
                         </div>
                     </div>
 
@@ -137,7 +143,7 @@
                         <p>Node.js</p>
                         <p>MongoDB</p>
                         <p>Mongoose</p>
-                        <p>Json Web Tokens</p>
+                        <p>JSON Web Tokens</p>
                         <p>Bootstrap</p>
                         <p>Sass</p>
                     </div>
@@ -147,16 +153,19 @@
 
 
 
-            <div class="project col-md-6 col-lg-4 justify-self-center">
+            <div class="project col-md-6 col-lg-4">
                 <img src="./images/cafe-madrid-lunch.jpg" alt="Screenshot of Cafe Madrid Project">
                 <div class="project-info-box row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <h2>Cafe Madrid</h2>
                         <h4>Online Ordering</h4>
                         <p class="description"> Order some hypothetical tapas for lunch! </p>
                         <div class="button-box">
-                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
-                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                            <button class="btn btn-sm btn-outline-dark"><a a
+                                    href="https://github.com/Samantha2233/Cafe-Madrid-Online-Ordering"
+                                    target="_blank">GitHub</a></button>
+                            <button class="btn btn-sm btn-outline-dark"><a
+                                    href="https://cafe-madrid.herokuapp.com/lunch" target="_blank">Demo</a></button>
                         </div>
                     </div>
                     <div class="tech-used col-4">
@@ -171,16 +180,20 @@
                 </div>
             </div>
 
-            <div class="project col-md-6 col-lg-4 justify-self-center">
+            <div class="project col-md-6 col-lg-4">
                 <img src="./images/War.jpg" alt="Screenshot of War Card Game Project">
                 <div class="project-info-box row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <h2>War</h2>
                         <h4>(The Card Game)</h4>
                         <p class="description"> Gaming Logic with JavaScript</p>
                         <div class="button-box">
-                            <button class="btn btn-sm btn-outline-dark">GitHub</button>
-                            <button class="btn btn-sm btn-outline-dark">Demo</button>
+                            <button class="btn btn-sm btn-outline-dark"><a
+                                    href="https://github.com/Samantha2233/War-The-Card-Game"
+                                    target="_blank">GitHub</a></button>
+                            <button class="btn btn-sm btn-outline-dark"><a
+                                    href="https://samantha2233.github.io/War-The-Card-Game/"
+                                    target="_blank">Demo</a></button>
                         </div>
                     </div>
 
@@ -200,10 +213,9 @@
         <section id="bio-contact-section" class="row">
             <div class="col-md-8 col-lg-6">
                 <h3>Bio</h3>
-                <p> I have been practicing design and programming in San Francisco for 4 years.
-                    I first came here for the Academy of Art's Web Design and New Media program where I got my
-                    Associates
-                    Degree. In that time, I found out how to build prototypes, how to animate, and learned lots about
+                <p id="bio"> I have been practicing design and programming in San Francisco, California for 4 years.
+                    I first came here for the Academy of Art's Web Design and New Media program. In that time, I found
+                    out how to build prototypes, how to animate, and learned lots about
                     Graphic Design, Brand Identity and User Experience.
                     </br>
                     </br>
@@ -213,9 +225,27 @@
                     routing, authentication, etc. - Which all ultimately contribute to building real-world
                     Full-Stack applications!</p>
             </div>
-            <div class="col-md-8 col-lg-6">
+            <div class="col-md-8 col-lg-6"></div>
+            <div class="col-md-8 col-lg-6"></div>
+            <div class="col-md-8 col-lg-6 contact-section">
                 <h3>Contact</h3>
-                <p>sami.shackelford@gmail.com</p>
+                <P>If you need someone who knows how to work at the intersection of design and development, I'm your
+                    gal! Please, feel free to
+                    shoot me an email:</P>
+                <div id="email">
+                    <a href="mailto:sami.shackelford@gmail.com"> <i class="fas fa-paper-plane"></i>
+                        sami.shackelford@gmail.com</a>
+                </div>
+                <div class="button-box">
+                    <button class="btn btn-sm btn-outline-dark"><a href="https://github.com/Samantha2233"
+                            target="_blank">GitHub</a></button>
+                    <button class="btn btn-sm btn-outline-dark"><a
+                            href="https://www.linkedin.com/in/samanthashackelford/"
+                            target="_blank">LinkedIn</a></button>
+                </div>
+            </div>
+            <div class="col-12">
+                <h3 id="thanks">Thank you for visiting!</h3>
             </div>
 
 

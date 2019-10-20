@@ -36,11 +36,14 @@ $(document).ready(function () {
 
     //  M O B I L E   N A V
     var hamburger = document.querySelector("#hamburger");
-    console.log(hamburger);
     var mobileNav = document.getElementById("mobile-nav");
-    console.log(mobileNav);
+    var welcome = document.querySelector('#welcome');
+    var skills = document.querySelector('#skills');
+    var projects = document.querySelector('#projects');
+    var bio = document.querySelector('#bio-and-contact');
     var exit = document.getElementById("exit");
-    console.log(exit);
+
+
 
     function openMobileNav() {
         mobileNav.style.display = "block";
@@ -56,7 +59,9 @@ $(document).ready(function () {
 
     hamburger.addEventListener('click', openMobileNav);
     exit.addEventListener('click', closeMobileNav);
-
-
+    welcome.addEventListener('click', closeMobileNav);
+    skills.addEventListener('click', closeMobileNav);
+    projects.addEventListener('click', closeMobileNav);
+    bio.addEventListener('click', closeMobileNav);
 })
 

@@ -1,5 +1,6 @@
 :root {
     --pink: #FBF7F4;
+    --actualPink: rgb(251, 244, 249);
     --lightBlue: #F2FFFD;
     --mediumBlue: #8DB6BA;
     --skyBlue: rgb(153, 226, 248);
@@ -476,13 +477,17 @@ h4 {
 
 .button-box button {
     border: 1px solid var(--mediumBlue);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .button-box a {
     color: black;
     text-decoration: none;
+}
+
+.button-box i {
+    font-size: 17px;
 }
 
 .button-box button:hover {
@@ -504,9 +509,29 @@ h4 {
 
 
 .contact-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin: 20px 0;
+    background-color: var(--pink);
 }
+
+.contact-section > div {
+    display: block;
+    width: 300px;
+    margin: 100px auto;
+}
+
+.contact-section p {
+    width: 275px;
+}
+
+@media screen and (max-width: 775px) {
+    .contact-section p {
+        width: 100%;
+    }
+}
+
+
+
+
 
 #email {
     padding-bottom: 20px;
@@ -515,13 +540,36 @@ h4 {
 
 #thanks {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     font-style: italic;
     letter-spacing: 1px;
     text-transform: none;
-    text-align: end;
+    text-align: right;
 }
 
+@media screen and (max-width: 1000px) and (min-width: 775px) {
+    #thanks{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #thanks {
+        text-align: center;
+    }
+}
+
+footer {
+    padding: 150px 0 25px 0;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        padding:100px 0 25px 0;
+    }
+}
 
 

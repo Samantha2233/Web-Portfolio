@@ -1,0 +1,24 @@
+.contact-section {
+  margin: 20px 0;
+  background-color: var(--pink);
+}
+
+.contact-section>div {
+  display: block;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.contact-section p {
+  width: 275px;
+}
+
+@media screen and (max-width: 775px) {
+  .contact-section p {
+    width: 100%;
+  }
+}
+
+#email {
+  padding-bottom: 20px;
+}

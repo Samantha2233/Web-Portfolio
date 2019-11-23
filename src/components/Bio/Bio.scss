@@ -1,0 +1,33 @@
+#bio {
+  width: 90%;
+}
+
+#portrait {
+  width: 50%;
+  max-width: 600px;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 1325px) {
+  #portrait {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #portrait {
+    width: 100%;
+  }
+}
+
+#edden {
+  position: absolute;
+  right: -25px;
+  top: 80%;
+  transform: rotate(90deg);
+  margin: 0;
+  padding: 0;
+  color: var(--mediumBlue);
+  font-size: 12px;
+}

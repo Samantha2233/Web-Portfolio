@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+/*   U N I V E R S A L   C O L O R S   */
+
+:root {
+  --pink: #FBF7F4;
+  --actualPink: rgb(251, 244, 249);
+  --lightBlue: #F2FFFD;
+  --mediumBlue: #8DB6BA;
+  --skyBlue: rgb(153, 226, 248);
+  --darkBlue: #043E58;
+  --sunOrange: #F8B72B;
+}
+
+/*   U N I V E R S A L   F O N T   S T Y L E S   */
+
+.medium {
+  font-weight: 600;
+}
+
+/*   U N I V E R S A L   B U T T O N   S T Y L E S  */
+
+.button-box button {
+  border: 1px solid var(--mediumBlue);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 2px;
+}
+
+.button-box a {
+  color: black;
+  text-decoration: none;
+}
+
+.button-box i {
+  font-size: 17px;
+}
+
+.button-box button:hover {
+  border: 1px solid var(--darkBlue);
+  background-color: var(--lightBlue);
+}

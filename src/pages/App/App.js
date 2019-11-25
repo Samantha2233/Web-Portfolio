@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.scss';
+
+import ProjectsPage from '../ProjectsPage/ProjectsPage';
+import HomePage from '../HomePage/HomePage';
 
 import Nav from '../../components/Nav/Nav';
 import MobileNav from '../../components/MobileNav/MobileNav';
-import Welcome from '../../components/Welcome/Welcome';
-import Projects from '../../components/Projects/Projects';
-import Bio from '../../components/Bio/Bio';
-import Contact from '../../components/Contact/Contact';
-import Footer from '../../components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -15,11 +14,10 @@ class App extends Component {
       <div>
         <Nav />
         <MobileNav />
-        <Welcome />
-        <Projects />
-        <Bio />
-        <Contact />
-        <Footer />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/projects' component={ProjectsPage} />
+        </Switch>
       </div>
     )
   }

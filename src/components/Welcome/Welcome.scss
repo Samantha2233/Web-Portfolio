@@ -1,7 +1,7 @@
 /*   W E L C O M E   S E C T I O N   */
 
 #welcome-section {
-  height: 70vh;
+  height: 500px;
   transition: 1s;
   position: relative;
 }
@@ -26,6 +26,10 @@
   display: block;
   font-size: 8.5vw;
   margin: 0;
+}
+
+.2020 {
+  font-family: 'Romanesco', cursive;
 }
 
 #welcome-section p {

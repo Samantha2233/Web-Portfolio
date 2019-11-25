@@ -11,10 +11,8 @@ class Welcome extends React.Component {
           <div class='lightBlueBG'></div>
           <div id="welcome-words">
             <h1>Portfolio</h1>
-            <br />
-            <p> A <span class="medium">Front-End Developer</span> with</p>
-            <p id="third-p"><span class="medium">Full-Stack</span> knowledge and an</p>
-            <p><span class="medium">admiration</span> for <span class="medium">UX/UI Design</span>.</p>
+            <p> Hey, I'm Samanatha! Here are a few web applications I've been working on over the past year.</p>
+            <p> Click on the buttons below to see which projects they're used in: </p>
           </div>
           <TechButtons />
         </section>

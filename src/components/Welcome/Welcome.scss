@@ -1,0 +1,35 @@
+/*   W E L C O M E   S E C T I O N   */
+
+#welcome-section {
+  height: 70vh;
+  transition: 1s;
+  position: relative;
+}
+
+.lightBlueBG {
+  background-color: var(--lightBlue);
+  height: 85vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -100;
+}
+
+#welcome-words {
+  padding-top: 150px;
+  margin-left: 70px;
+  margin-right: 150px;
+  transition: .5s;
+}
+
+#welcome-section h1 {
+  font-family: 'Cormorant Garamond', serif;
+  display: block;
+  font-size: 8.5vw;
+  margin: 0;
+}
+
+#welcome-section p {
+  font-family: 'Noto Sans TC', sans-serif;
+  margin: 5px 0;
+  display: inline;
+}

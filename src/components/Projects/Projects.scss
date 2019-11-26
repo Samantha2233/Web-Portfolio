@@ -2,15 +2,32 @@
   display: flex;
   align-content: stretch;
   flex-wrap: wrap;
-  margin: 0 70px 50px 70px;
+  margin: 0 70px 50px 55px;
 }
 
 .project-preview {
   background-color: var(--pink);
-  margin: 10px;
+  margin: 15px;
   padding: 20px;
   border-radius: 20px;
   width: 31%;
+  h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .project-preview {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-preview {
+    width: 49%;
+    flex-grow: 1;
+  }
 }
 
 .project-preview-img {
@@ -19,4 +36,12 @@
 
 .project {
   margin-top: 10px;
+}
+
+.front-end {
+  background-color: var(--yellow);
+}
+
+.back-end {
+  background-color: var(--blue);
 }

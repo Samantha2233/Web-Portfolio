@@ -185,6 +185,33 @@ const PROJECT_DATA = [
           },
         ],
       },
+      {
+        title: 'War',
+        subtitle: 'The Card Game',
+        description: 'Gaming Logic with JavaScript.',
+        github: 'https://github.com/Samantha2233/War-The-Card-Game',
+        website: 'https://samantha2233.github.io/War-The-Card-Game/',
+        images: [
+          '/images/War/War.jpg',
+        ],
+        technologies:
+          [
+            {
+              name: 'Vanilla JavaScript',
+              type: 'Front End'
+            },
+            {
+              name: 'HTML',
+              type: 'Front End'
+            },
+            {
+              name: 'CSS',
+              type: 'Front End'
+            },
+          ],
+        methodologies: [
+        ],
+      },
     ]
   }
 ]

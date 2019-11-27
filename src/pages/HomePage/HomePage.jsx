@@ -14,6 +14,9 @@ class HomePage extends Component {
       <div className='homepage'>
         <Welcome />
         <Projects />
+        <div className='button-box'>
+          <button className='btn btn-sm' onClick={() => this.props.history.push('/projects')}>View All Projects</button>
+        </div>
         <Bio />
       </div>
     )

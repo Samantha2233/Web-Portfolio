@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import './Projects.scss';
 
 
@@ -38,7 +39,7 @@ class Projects extends Component {
                         }
                       </div>
                       <div className='project button-box'>
-                        <button className='btn btn-sm'><a href={item.github} target='_blank' rel="noopener noreferrer">Project Page</a></button>
+                        <button className='btn btn-sm' onClick={() => this.props.history.push(`/projects/${item.id}`)} > Project Details</button>
                         <button className='btn btn-sm'><a href={item.github} target='_blank' rel="noopener noreferrer">Github</a></button>
                         <button className='btn btn-sm'><a href={item.website} target='_blank' rel="noopener noreferrer">Visit Site</a></button>
                       </div>
@@ -63,4 +64,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default withRouter(Projects);

@@ -4,6 +4,7 @@ const PROJECT_DATA = [
     routeName: 'projetcs',
     items: [
       {
+        id: 1,
         title: '2 Minute Mindsets',
         subtitle: 'Quick Tips for Intentional Living',
         description: 'It only takes 2 minutes to gain a better mindset.',
@@ -78,6 +79,7 @@ const PROJECT_DATA = [
         ]
       },
       {
+        id: 2,
         title: 'Visualize',
         subtitle: 'Task Manager',
         description: 'Prioritize your tasks by size and color! Calendar included.',
@@ -133,6 +135,7 @@ const PROJECT_DATA = [
         ],
       },
       {
+        id: 3,
         title: 'Cafe Madrid',
         subtitle: 'Spanish Tapas for Order!',
         description: 'Online ordering for a spanish tapas restaurant in Salt Lake City.',
@@ -186,6 +189,7 @@ const PROJECT_DATA = [
         ],
       },
       {
+        id: 4,
         title: 'War',
         subtitle: 'The Card Game',
         description: 'Gaming Logic with JavaScript.',

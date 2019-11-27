@@ -23,6 +23,12 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .project-preview {
+    width: 48%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .project-preview {
     width: 49%;

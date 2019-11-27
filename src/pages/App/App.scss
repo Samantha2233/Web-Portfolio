@@ -17,6 +17,7 @@ body {
   --mediumBlue: #8DB6BA;
   --skyBlue: rgb(153, 226, 248);
   --tealBlue: rgb(62, 238, 194);
+  --blue: rgb(4, 135, 196);
   --darkBlue: #043E58;
   --sunOrange: #F8B72B;
   --yellow: rgb(248, 206, 157);
@@ -32,12 +33,17 @@ body {
 
 /*   U N I V E R S A L   B U T T O N   S T Y L E S  */
 
+.button-box {
+  margin-left: -2px;
+}
+
 .button-box button {
-  border: 1px solid var(--tealBlue);
+  border: 1px solid var(--blue);
   padding-left: 15px;
   padding-right: 15px;
   margin: 2px;
-  background-color: white;
+  background-color: var(--blue);
+  color: white;
 }
 
 .button-box a {
